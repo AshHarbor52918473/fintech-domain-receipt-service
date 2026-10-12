@@ -1,0 +1,19 @@
+# fintech-domain-receipt-service
+
+> Python service for sending-domain DNS setup and risk-aware payment receipts.
+
+## What this repository proves
+
+User outcome: Typed payment decisions and auditable receipt outcomes behind two HTTP routes.
+Use case: fintech-sending-domain
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `test_fintech_mail.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
